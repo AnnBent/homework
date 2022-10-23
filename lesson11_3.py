@@ -26,4 +26,4 @@ elif year == year2:
     else:
         print("1 человек старше")
 else:
-    print("1 человек старше")0
+    print("1 человек старше")
