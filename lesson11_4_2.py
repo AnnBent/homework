@@ -1,5 +1,3 @@
-# Вывести на экран ряд натуральных чисел от минимума до максимума с шагом
-
 try:
     minimal = int(input("Введите минимальное натуральное число: "))
     maximal = int(input("Введите максимальное натуральное число: "))
@@ -9,9 +7,8 @@ try:
     elif minimal <= 0 or maximal <= 0 or step <= 0:
         print("Вы ввели не натуральные числа")
     else:
-        print("ok")
-        if (minimal + step) >= maximal:
-
+        for i in range(minimal, maximal+1, step):
+            print(i, end = ' ')
 except ValueError:
     print("Вы ввели символы, а не число")
 
