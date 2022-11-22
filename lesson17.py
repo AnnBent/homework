@@ -1,12 +1,7 @@
-import itertools
-str1 = input("Введите строку: ")
-
-def unique(obj: iter):
-    args = []
-    for a in obj:
-        if a not in args:
-            args.append(a)
-            yield a
-
-str2 = tuple(unique(str1))
+str1 = list(input("Введите строку: "))
+str2 = list()
+for i in str1:
+    if i not in str2:
+       str2.append(i)
+str2 = tuple(str2)
 print(str2)
