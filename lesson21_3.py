@@ -7,4 +7,4 @@ with open("text.txt", 'r') as f:
         line = line.split()
         word = len(line)
         print("Количество символов в строке: ", symbol,"Слов:" , word)
-    print("Количество строк в тексте: ", line_count)
+    print("Количество строк в тексте: ", line_count) 
