@@ -3,7 +3,7 @@ with open("text.txt", 'r') as f:
     for line in f:
         print(line.rstrip())
         line_count += 1
-        symbol = len(line)
+        symbol = len(line.rstrip())
         line = line.split()
         word = len(line)
         print("Количество символов в строке: ", symbol,"Слов:" , word)
